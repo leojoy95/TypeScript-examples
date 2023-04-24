@@ -1,0 +1,26 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hawk:20160119':
+    - codecov.io > request > hawk:
+        patched: '2023-04-24T21:55:40.529Z'
+  'npm:http-signature:20150122':
+    - codecov.io > request > http-signature:
+        patched: '2023-04-24T21:55:40.529Z'
+  'npm:lodash:20180130':
+    - grunt-ts > csproj2ts > lodash:
+        patched: '2023-04-24T21:55:40.529Z'
+  'npm:mime:20170907':
+    - codecov.io > request > form-data > mime:
+        patched: '2023-04-24T21:55:40.529Z'
+  'npm:minimatch:20160620':
+    - grunt-ts > chokidar > readdirp > minimatch:
+        patched: '2023-04-24T21:55:40.529Z'
+  'npm:request:20160119':
+    - codecov.io > request:
+        patched: '2023-04-24T21:55:40.529Z'
+  'npm:tunnel-agent:20170305':
+    - codecov.io > request > tunnel-agent:
+        patched: '2023-04-24T21:55:40.529Z'
