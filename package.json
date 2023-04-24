@@ -11,12 +11,14 @@
     "url": "https://github.com/agubler/TypeScript-examples.git"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "codecov.io": "^0.1.6",
     "dojo-loader": ">=2.0.0-beta.5",
-    "dts-generator": "1.7.0",
+    "dts-generator": "3.0.0",
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-copy": "^1.0.0",
@@ -26,10 +28,14 @@
     "grunt-ts": "^5.5.1",
     "grunt-tslint": "^3.1.0",
     "grunt-typings": ">=0.1.5",
-    "intern": "^3.2.3",
+    "intern": "^4.0.0",
     "istanbul": "^0.4.3",
-    "remap-istanbul": "^0.6.4",
+    "remap-istanbul": "^0.10.0",
     "tslint": "^3.10.2",
     "typescript": "1.8.10"
+  },
+  "snyk": true,
+  "dependencies": {
+    "@snyk/protect": "latest"
   }
 }
