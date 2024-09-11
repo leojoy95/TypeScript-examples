@@ -11,7 +11,9 @@
     "url": "https://github.com/agubler/TypeScript-examples.git"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "codecov.io": "^0.1.6",
@@ -31,5 +33,9 @@
     "remap-istanbul": "^0.6.4",
     "tslint": "^3.10.2",
     "typescript": "1.8.10"
+  },
+  "snyk": true,
+  "dependencies": {
+    "@snyk/protect": "latest"
   }
 }
